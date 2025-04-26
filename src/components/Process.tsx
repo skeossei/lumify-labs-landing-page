@@ -1,4 +1,4 @@
-import { Calendar, Search, Code, Rocket, ArrowRight } from "lucide-react";
+import { Calendar, Search, Code, Rocket } from "lucide-react";
 import {
   Card,
   CardContent,

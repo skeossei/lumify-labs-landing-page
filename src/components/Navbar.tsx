@@ -4,6 +4,7 @@ import { FC, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Calendly from "./Calendly";
+import Image from "next/image";
 
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,13 @@ const Navbar: FC = () => {
           className="flex items-center gap-2"
           onClick={scrollToTop}
         >
-          <img rel="icon" src="/logo.svg" className="w-10 h-10" />
+          <Image
+            src="/logo.svg"
+            alt="Lumify Labs Logo"
+            width={40}
+            height={40}
+            className="w-10 h-10"
+          />{" "}
           <span className="text-xl font-bold tracking-tight">Lumify Labs</span>
         </Link>
 
