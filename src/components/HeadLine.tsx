@@ -21,7 +21,7 @@ const HeadLine: FC = () => {
           </p>
 
           {/* Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center sm:justify-center">
             <Calendly className="bg-sky-500 hover:bg-sky-600 text-white cursor-pointer px-4 py-2 rounded-md font-medium flex flex-row items-center">
               Book a Free Consultation
               <ArrowRight className="ml-2 h-4 w-4" />

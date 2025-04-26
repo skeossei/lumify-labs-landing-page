@@ -45,7 +45,7 @@ const Navbar: FC = () => {
           onClick={scrollToTop}
         >
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="Lumify Labs Logo"
             width={40}
             height={40}
@@ -67,7 +67,7 @@ const Navbar: FC = () => {
             className="text-md font-medium text-slate-600 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-6"
             onClick={(e) => scrollToSection(e, "process")}
           >
-            Our Process
+            Process
           </Link>
           <Link
             href="#contact"
@@ -95,18 +95,18 @@ const Navbar: FC = () => {
         <div className="md:hidden container px-4 pb-4 cursor-pointer">
           <nav className="flex flex-col gap-4">
             <Link
-              href="#process"
-              className="text-md font-medium text-slate-600 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-6"
-              onClick={(e) => scrollToSection(e, "process")}
-            >
-              Our Process
-            </Link>
-            <Link
               href="#services"
               className="text-md font-medium text-slate-600 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-6"
               onClick={(e) => scrollToSection(e, "services")}
             >
               Services
+            </Link>
+            <Link
+              href="#process"
+              className="text-md font-medium text-slate-600 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-6"
+              onClick={(e) => scrollToSection(e, "process")}
+            >
+              Process
             </Link>
             <Link
               href="#contact"

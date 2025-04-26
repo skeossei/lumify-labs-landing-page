@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { FC } from "react";
 import Logo from "./Logo";
 
@@ -6,40 +6,53 @@ const Footer: FC = () => {
   return (
     <footer className="bg-slate-900 text-slate-300 py-12 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <Logo variant="white" />
+        <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:items-start gap-8 text-center md:text-left">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
+            <div className="flex items-center justify-center">
+              <Logo variant="white" />
+            </div>
             <p className="text-sm text-slate-400">
               Transforming businesses through intelligent automation solutions.
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 mt-8 md:mt-0 text-center md:text-left">
             <h4 className="text-lg font-semibold text-white">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li className="flex items-center">
-                <Mail size={16} className="mr-2" />
+              <li className="group">
                 <a
-                  href="mailto:info@automateai.com"
-                  className="hover:text-white transition-colors"
+                  href="https://linkedin.com/company/lumifylabs-ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-white transition-colors"
                 >
-                  info@automateai.com
+                  <Linkedin
+                    size={16}
+                    className="mr-2 text-white group-hover:translate-x-1 transition-transform"
+                  />
+                  linkedin.com/company/lumifylabs-ai
                 </a>
               </li>
-              <li className="flex items-center">
-                <Phone size={16} className="mr-2" />
+
+              <li className="group">
                 <a
-                  href="tel:+1234567890"
-                  className="hover:text-white transition-colors"
+                  href="https://linkedin.com/in/sevag-keosseian"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-white transition-colors"
                 >
-                  (123) 456-7890
+                  <Linkedin
+                    size={16}
+                    className="mr-2 text-white group-hover:translate-x-1 transition-transform"
+                  />
+                  linkedin.com/in/sevag-keosseian
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-500">
+        <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-500 text-center">
           <p>© {new Date().getFullYear()} Lumify Labs. All rights reserved.</p>
         </div>
       </div>

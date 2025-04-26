@@ -79,9 +79,9 @@ const Services: FC = () => {
               className={`border ${service.borderColor} hover:shadow-lg transition-all duration-300 h-full flex flex-col`}
             >
               <CardHeader
-                className={`${service.color} rounded-t-lg flex flex-col items-center justify-center min-h-[80px]`}
+                className={`${service.color} flex flex-col items-center justify-center min-h-[60px]`}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col items-center gap-2 md:flex-row md:gap-3 text-center md:text-left">
                   <div
                     className={`w-12 h-12 rounded-full bg-white flex items-center justify-center ${service.textColor}`}
                   >
@@ -93,16 +93,16 @@ const Services: FC = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="pt-6 flex-grow flex flex-col">
-                {/* ⬇️ NEW container to control space */}
-                <div className="flex flex-col flex-grow">
-                  <CardDescription className="text-slate-600 mb-6">
+              <CardContent className="pt-4 md:pt-6 flex-grow flex flex-col">
+                {/* Description Section */}
+                <div className="min-h-[90px] md:min-h-[120px]]">
+                  <CardDescription className="text-slate-600 md:mb-6">
                     {service.description}
                   </CardDescription>
                 </div>
 
-                {/* Key Benefits */}
-                <div className="mt-auto">
+                {/* Key Benefits Section */}
+                <div>
                   <h4 className="font-medium mb-3">
                     Key Benefits for Pest Control:
                   </h4>
@@ -110,11 +110,11 @@ const Services: FC = () => {
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
                         <span
-                          className={`mr-2 mt-1 flex h-5 w-5 items-center justify-center rounded-full ${service.color} ${service.textColor} text-xs`}
+                          className={`mr-2 mt-1 flex h-6 w-6 min-h-6 min-w-6 items-center justify-center rounded-full ${service.color} ${service.textColor} text-sm font-bold`}
                         >
                           ✓
                         </span>
-                        <span className="text-sm">{feature}</span>
+                        <span className="text-sm mt-1">{feature}</span>
                       </li>
                     ))}
                   </ul>

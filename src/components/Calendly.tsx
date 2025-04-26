@@ -1,9 +1,7 @@
-// components/Calendly.tsx
 "use client";
 
-import { FC, ReactNode, useState } from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"; // Assuming you're using shadcn/ui
-import { InlineWidget } from "react-calendly";
+import { FC, ReactNode } from "react";
+import Link from "next/link"; // Import Link!
 
 interface CalendlyProps {
   children: ReactNode;
@@ -11,22 +9,10 @@ interface CalendlyProps {
 }
 
 const Calendly: FC<CalendlyProps> = ({ children, className }) => {
-  const [open, setOpen] = useState(false);
-
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <button className={className}>{children}</button>
-      </DialogTrigger>
-      <DialogContent className="max-w-4xl p-0">
-        <div className="h-[700px]">
-          <InlineWidget
-            url="hhttps://calendly.com/sev-keoss/lumify-labs-intro-call"
-            styles={{ height: "100%", width: "100%" }}
-          />
-        </div>
-      </DialogContent>
-    </Dialog>
+    <Link href="/call" passHref>
+      <button className={className}>{children}</button>
+    </Link>
   );
 };
 

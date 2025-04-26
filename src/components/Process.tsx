@@ -72,7 +72,7 @@ const Process: FC = () => {
               className={`border ${step.borderColor} hover:shadow-md transition-all duration-300`}
             >
               <CardHeader
-                className={`${step.color} rounded-t-lg min-h-[70px] flex items-center justify-between`}
+                className={`${step.color} min-h-[70px] flex items-center justify-between`}
               >
                 <div
                   className={`w-12 h-12 rounded-full bg-white flex items-center justify-center ${step.textColor}`}
