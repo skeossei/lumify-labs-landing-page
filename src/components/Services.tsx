@@ -10,11 +10,11 @@ import { FC } from "react";
 
 const services = [
   {
-    title: "Customer-Facing Chatbots",
+    title: "Customer Chatbots",
     description:
       "24/7 virtual assistants that handle appointment scheduling, answer common pest questions, and qualify leads while you focus on service delivery. Perfect for converting website visitors into paying customers.",
     icon: MessageSquare,
-    color: "bg-sky-100:",
+    color: "bg-sky-100",
     textColor: "text-sky-600",
     borderColor: "border-sky-200",
     features: [
@@ -26,7 +26,7 @@ const services = [
     ],
   },
   {
-    title: "Internal Team Assistants",
+    title: "Internal Assistants",
     description:
       "AI tools that help your technicians and office staff access information instantly, streamline communication, and reduce administrative work. Boost productivity and improve service quality.",
     icon: Users,
@@ -46,13 +46,11 @@ const services = [
     description:
       "Custom AI solutions that automate repetitive tasks like scheduling, routing, billing, and reporting. Save time, reduce errors, and allow your team to focus on delivering exceptional pest control services.",
     icon: Workflow,
-    color: "bg-sky-100",
-    textColor: "text-sky-600",
-    borderColor: "border-sky-200",
+    color: "bg-sky-300",
+    textColor: "text-sky-800",
+    borderColor: "border-sky-400",
     features: [
-      "Intelligent route optimization for technicians",
       "Automated follow-up scheduling for recurring treatments",
-      "Weather-based service rescheduling",
       "Automated billing and payment processing",
       "Custom reporting for business performance metrics",
     ],
@@ -80,7 +78,9 @@ const Services: FC = () => {
               key={index}
               className={`border ${service.borderColor} hover:shadow-lg transition-all duration-300 h-full flex flex-col`}
             >
-              <CardHeader className={`${service.color} rounded-t-lg`}>
+              <CardHeader
+                className={`${service.color} rounded-t-lg flex flex-col items-center justify-center min-h-[80px]`}
+              >
                 <div className="flex items-center gap-3">
                   <div
                     className={`w-12 h-12 rounded-full bg-white flex items-center justify-center ${service.textColor}`}
@@ -92,10 +92,16 @@ const Services: FC = () => {
                   </CardTitle>
                 </div>
               </CardHeader>
+
               <CardContent className="pt-6 flex-grow flex flex-col">
-                <CardDescription className="text-slate-600 mb-6">
-                  {service.description}
-                </CardDescription>
+                {/* ⬇️ NEW container to control space */}
+                <div className="flex flex-col flex-grow">
+                  <CardDescription className="text-slate-600 mb-6">
+                    {service.description}
+                  </CardDescription>
+                </div>
+
+                {/* Key Benefits */}
                 <div className="mt-auto">
                   <h4 className="font-medium mb-3">
                     Key Benefits for Pest Control:

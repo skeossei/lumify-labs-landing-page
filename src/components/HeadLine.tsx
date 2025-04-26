@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react"; // ⬅️ Added Clock import
 import { FC } from "react";
+import Calendly from "./Calendly";
 
 const HeadLine: FC = () => {
   return (
@@ -10,7 +11,7 @@ const HeadLine: FC = () => {
           <span className="px-4 py-1.5 text-sm font-medium rounded-full bg-sky-100 text-sky-800">
             AI Solutions for Pest Control Companies
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             Transform Your <span className="text-sky-500">Pest Control</span>{" "}
             Business with AI
           </h1>
@@ -19,18 +20,18 @@ const HeadLine: FC = () => {
             technician routes with custom AI solutions designed specifically for
             pest control companies.
           </p>
+
+          {/* Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-sky-500 hover:bg-sky-600">
+            <Calendly className="bg-sky-500 hover:bg-sky-600 text-white cursor-pointer px-4 py-2 rounded-md font-medium flex flex-row items-center">
               Book a Free Consultation
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-sky-200 text-sky-700 hover:bg-sky-50"
-            >
-              See Pest Control Case Studies
-            </Button>
+            </Calendly>
+          </div>
+          {/* ⬇️ NEW CLOCK ROW */}
+          <div className="flex items-center justify-center text-slate-500 text-sm gap-2">
+            <Clock className="w-4 h-4" />
+            <span>No-Pressure 30-min Call</span>
           </div>
         </div>
       </div>

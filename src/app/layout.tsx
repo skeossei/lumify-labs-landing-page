@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Lumify Labs</title>
-        <link href="/log.svg" rel="icon" type="image/svg+xml" />
+        <link href="/logo.svg" rel="icon" type="image/svg+xml" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

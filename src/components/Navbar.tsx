@@ -37,7 +37,7 @@ const Navbar: FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b-[0.5px] bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b-[0.5px] border-slate-300 bg-white/80 backdrop-blur-md">
       <div className="max-w-screen-xl mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link
           href="/"

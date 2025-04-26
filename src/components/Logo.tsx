@@ -1,14 +1,16 @@
+import { FC } from "react";
+
 type LogoProps = {
   className?: string;
   size?: number;
   variant?: "default" | "monochrome" | "white";
 };
 
-export default function Logo({
+const Logo: FC<LogoProps> = ({
   className = "",
   size = 40,
   variant = "default",
-}: LogoProps) {
+}) => {
   // Define colors based on variant
   let primaryColor = "#0ea5e9"; // sky-500
   let secondaryColor = "#0284c7"; // sky-600
@@ -111,8 +113,10 @@ export default function Logo({
         className="font-bold text-xl tracking-tight"
         style={{ color: textColor }}
       >
-        AutomateAI
+        Lumify Labs
       </span>
     </div>
   );
-}
+};
+
+export default Logo;
