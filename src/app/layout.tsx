@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -11,6 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata: Metadata = {
+  title:
+    "Lumify Labs Landing Page | Chatbot Development & Workflow Automation Experts",
+  description:
+    "Boost efficiency and scale your business with our AI automation solutions. We specialize in custom chatbot development and smart workflow automations tailored to your needs. Get started today!",
+  metadataBase: new URL("https://lumifylabs.ai"),
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Lumify Labs</title>
-        <link href="/logo.png" rel="icon" type="image/png" />
+        <link href="/logo-transparent.png" rel="icon" type="image/png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -1,6 +1,6 @@
 import { Linkedin } from "lucide-react";
 import { FC } from "react";
-import Logo from "./Logo";
+import Image from "next/image";
 
 const Footer: FC = () => {
   return (
@@ -9,9 +9,14 @@ const Footer: FC = () => {
         <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:items-start gap-8 text-center md:text-left">
           <div className="space-y-4 flex flex-col items-center md:items-start">
             <div className="flex items-center justify-center">
-              <Logo variant="white" />
+              <Image
+                src="/logo-transparent.png"
+                alt="Lumify Labs Logo"
+                width={50}
+                height={50}
+              />
             </div>
-            <p className="text-sm text-slate-400">
+            <p className="text-sm text-slate-400 -mt-3">
               Transforming businesses through intelligent automation solutions.
             </p>
           </div>

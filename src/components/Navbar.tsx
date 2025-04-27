@@ -45,11 +45,10 @@ const Navbar: FC = () => {
           onClick={scrollToTop}
         >
           <Image
-            src="/logo.png"
+            src="/logo-transparent.png"
             alt="Lumify Labs Logo"
-            width={40}
-            height={40}
-            className="w-10 h-10"
+            width={50}
+            height={50}
           />{" "}
           <span className="text-xl font-bold tracking-tight">Lumify Labs</span>
         </Link>

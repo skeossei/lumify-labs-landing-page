@@ -44,7 +44,7 @@ const services = [
   {
     title: "Workflow Automations",
     description:
-      "Custom AI solutions that automate repetitive tasks like scheduling, routing, billing, and reporting. Save time, reduce errors, and allow your team to focus on delivering exceptional pest control services.",
+      "Custom AI solutions that automate repetitive tasks like scheduling and reporting. Save time, reduce errors, and allow your team to focus on delivering exceptional pest control services.",
     icon: Workflow,
     color: "bg-sky-300",
     textColor: "text-sky-800",
@@ -53,6 +53,7 @@ const services = [
       "Automated follow-up scheduling for recurring treatments",
       "Automated billing and payment processing",
       "Custom reporting for business performance metrics",
+      "Review form sent directly to clients after a job",
     ],
   },
 ];
@@ -79,9 +80,9 @@ const Services: FC = () => {
               className={`border ${service.borderColor} hover:shadow-lg transition-all duration-300 h-full flex flex-col`}
             >
               <CardHeader
-                className={`${service.color} flex flex-col items-center justify-center min-h-[60px]`}
+                className={`${service.color} flex items-center justify-center min-h-[80px]`}
               >
-                <div className="flex flex-col items-center gap-2 md:flex-row md:gap-3 text-center md:text-left">
+                <div className="flex items-center gap-3">
                   <div
                     className={`w-12 h-12 rounded-full bg-white flex items-center justify-center ${service.textColor}`}
                   >
