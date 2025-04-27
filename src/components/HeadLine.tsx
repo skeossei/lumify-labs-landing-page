@@ -16,8 +16,8 @@ const HeadLine: FC = () => {
           </h1>
           <p className="text-lg text-slate-600 mx-auto max-w-2xl">
             Automate scheduling, improve customer service, and optimize
-            technician routes with custom AI solutions designed specifically for
-            pest control companies.
+            workflows with custom AI solutions designed specifically for pest
+            control companies.
           </p>
 
           {/* Button */}

@@ -45,7 +45,7 @@ const Navbar: FC = () => {
           onClick={scrollToTop}
         >
           <Image
-            src="/logo-transparent.png"
+            src="/logo-transparent2.png"
             alt="Lumify Labs Logo"
             width={50}
             height={50}

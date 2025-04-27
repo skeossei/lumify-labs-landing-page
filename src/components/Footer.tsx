@@ -10,7 +10,7 @@ const Footer: FC = () => {
           <div className="space-y-4 flex flex-col items-center md:items-start">
             <div className="flex items-center justify-center">
               <Image
-                src="/logo-transparent.png"
+                src="/logo-transparent2.png"
                 alt="Lumify Labs Logo"
                 width={50}
                 height={50}
