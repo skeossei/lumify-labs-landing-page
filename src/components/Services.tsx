@@ -12,48 +12,48 @@ const services = [
   {
     title: "Customer Chatbots",
     description:
-      "24/7 virtual assistants that handle appointment scheduling, answer common pest questions, and qualify leads while you focus on service delivery. Perfect for converting website visitors into paying customers.",
+      "Customer-facing AI chatbots that enhance your website, improve customer service, and generate leads 24/7. Perfect for answering FAQs, product recommendations, and handling support inquiries.",
     icon: MessageSquare,
     color: "bg-sky-100",
     textColor: "text-sky-600",
     borderColor: "border-sky-200",
     features: [
-      "Automated appointment scheduling and rescheduling",
-      "Instant pest identification assistance",
-      "Service package recommendations based on customer needs",
-      "Emergency service request handling",
-      "Seamless handoff to your office staff when needed",
+      "24/7 customer support",
+      "Lead generation and qualification",
+      "FAQ automation",
+      "Seamless handoff to employees",
     ],
   },
   {
     title: "Internal Assistants",
     description:
-      "AI tools that help your technicians and office staff access information instantly, streamline communication, and reduce administrative work. Boost productivity and improve service quality.",
+      "Employee-facing AI assistants that streamline internal processes, answer company questions, and provide instant access to knowledge bases. Boost productivity and reduce operational costs.",
     icon: Users,
     color: "bg-sky-200",
     textColor: "text-sky-700",
     borderColor: "border-sky-300",
     features: [
-      "Treatment protocol lookup for technicians in the field",
-      "Inventory management and supply ordering assistance",
-      "Regulatory compliance and safety information access",
-      "Customer history and property details retrieval",
-      "Internal knowledge base for training and troubleshooting",
+      "Knowledge base integration",
+      "Employee onboarding assistance",
+      "IT help desk automation",
+      "HR policy inquiries",
+      "Internal documentation search",
     ],
   },
   {
     title: "Workflow Automations",
     description:
-      "Custom AI solutions that automate repetitive tasks like scheduling and reporting. Save time, reduce errors, and allow your team to focus on delivering exceptional pest control services.",
+      "Custom AI solutions that automate repetitive tasks, streamline complex workflows, and optimize business processes. Save time, reduce errors, and allow your team to focus on high-value work.",
     icon: Workflow,
     color: "bg-sky-300",
     textColor: "text-sky-800",
     borderColor: "border-sky-400",
     features: [
-      "Automated follow-up scheduling for recurring treatments",
-      "Automated billing and payment processing",
-      "Custom reporting for business performance metrics",
-      "Review form sent directly to clients after a job",
+      "Document processing and extraction",
+      "Approval workflow automation",
+      "Data entry and validation",
+      "Report generation",
+      "Cross-system integration",
     ],
   },
 ];
@@ -64,12 +64,12 @@ const Services: FC = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            AI Solutions for Pest Control Companies
+            Our AI Automation Services
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Our specialized AI tools are designed to address the unique
-            challenges of pest control businesses, from customer acquisition to
-            technician management and operational efficiency.
+            We offer specialized AI solutions designed to meet your specific
+            business needs, from customer-facing chatbots to internal tools and
+            workflow automation.
           </p>
         </div>
 
@@ -104,9 +104,7 @@ const Services: FC = () => {
 
                 {/* Key Benefits Section */}
                 <div>
-                  <h4 className="font-medium mb-3">
-                    Key Benefits for Pest Control:
-                  </h4>
+                  <h4 className="font-medium mb-3">Key Benefits:</h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">

@@ -13,7 +13,7 @@ const processSteps = [
     id: 1,
     title: "Book a Call",
     description:
-      "Schedule a consultation where we discuss your pest control business needs and identify automation opportunities specific to your operation.",
+      "Schedule a consultation where we discuss your business needs and identify automation opportunities.",
     icon: Calendar,
     color: "bg-sky-100",
     textColor: "text-sky-600",
@@ -23,7 +23,7 @@ const processSteps = [
     id: 2,
     title: "Research",
     description:
-      "We analyze your pest control workflows, scheduling systems, and customer interaction points to design the perfect AI automation solution for your specific needs.",
+      "We analyze your workflows and systems to design the perfect AI automation solution for your specific needs.",
     icon: Search,
     color: "bg-sky-200",
     textColor: "text-sky-700",
@@ -33,7 +33,7 @@ const processSteps = [
     id: 3,
     title: "Implement",
     description:
-      "Our team develops and integrates custom AI solutions that seamlessly fit into your existing pest control business processes and software systems.",
+      "Our team develops and integrates custom AI solutions that seamlessly fit into your existing business processes.",
     icon: Code,
     color: "bg-sky-300",
     textColor: "text-sky-800",
@@ -43,7 +43,7 @@ const processSteps = [
     id: 4,
     title: "Deploy & Fine-tune",
     description:
-      "We launch your solution and continuously optimize it based on performance data, seasonal pest trends, and your feedback.",
+      "We launch your solution and continuously optimize it based on performance data and your feedback.",
     icon: Rocket,
     color: "bg-sky-400",
     textColor: "text-sky-900",
@@ -61,7 +61,7 @@ const Process: FC = () => {
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             We follow a proven 4-step methodology to deliver AI automation
-            solutions that drive real results for pest control companies.
+            solutions that drive real business results.
           </p>
         </div>
 

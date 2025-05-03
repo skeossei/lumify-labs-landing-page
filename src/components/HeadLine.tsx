@@ -8,16 +8,15 @@ const HeadLine: FC = () => {
       <div className="container mx-auto max-w-4xl text-center">
         <div className="space-y-6">
           <span className="px-4 py-1.5 text-sm font-medium rounded-full bg-sky-100 text-sky-800">
-            AI Solutions for Pest Control Companies
+            AI Solutions for Rising Businesses
           </span>
           <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Transform Your <span className="text-sky-500">Pest Control</span>{" "}
-            Business with AI
+            AI Automation <span className="text-sky-500">Solutions</span> for
+            Your Business
           </h1>
           <p className="text-lg text-slate-600 mx-auto max-w-2xl">
-            Automate scheduling, improve customer service, and optimize
-            workflows with custom AI solutions designed specifically for pest
-            control companies.
+            Transform your operations with custom AI solutions that automate
+            tasks, increase efficiency, and drive growth.
           </p>
 
           {/* Button */}

@@ -17,7 +17,8 @@ const Footer: FC = () => {
               />
             </div>
             <p className="text-sm text-slate-400 -mt-3">
-              Transforming businesses through intelligent automation solutions.
+              Transforming rising businesses through intelligent automation
+              solutions.
             </p>
           </div>
 

@@ -12,11 +12,11 @@ const Cta: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 flex flex-col items-center md:items-start">
             <h2 className="text-3xl md:text-4xl font-bold text-center md:text-left">
-              Ready to Automate Your Pest Control Business?
+              Ready to Automate Your Business with AI?
             </h2>
             <p className="text-white/80 text-lg text-center md:text-left">
-              Take the first step towards transforming your pest control
-              operations. Book a free consultation call today.
+              Take the first step towards transforming your business operations.
+              Book a free consultation call today.
             </p>
             <Calendly className="bg-white text-sky-600 hover:bg-slate-100 cursor-pointer px-4 py-2 rounded-md font-medium flex flex-row items-center justify-center">
               <Calendar className="mr-2 h-4 w-4" />
@@ -25,12 +25,12 @@ const Cta: FC = () => {
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
             <h3 className="text-2xl font-semibold mb-4">
-              What Pest Control Companies Get:
+              What You&apos;ll Get:
             </h3>
             <ul className="space-y-4">
               {[
-                "Personalized assessment of your pest control business needs",
-                "Expert insights on AI implementation for your specific operation",
+                "Personalized assessment of your automation needs",
+                "Expert insights on AI implementation strategies",
                 "Custom roadmap for your business transformation",
                 "Transparent pricing and timeline estimates",
                 "No obligation to proceed after consultation",
